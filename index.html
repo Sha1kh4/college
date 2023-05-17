@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime number printer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="6.js"></script>
 </head>
-<script>
-function myFunction() {
-var sentence = document.getElementById("numb").value;
-document.getElementById("demo").innerHTML =
-sentence.split('').reverse().join('');
-function myFunction1() {
-var sentence = document.getElementById("numb").value;
-document.getElement
-}
-</script>
+
 <body>
-<form action="myform" method="post">
-<h1>Type a sentense which you want to reverse</h1>
-<input type="text" id="numb">
-<button type="button" onclick="myFunction()">string reverse</button>
-<button type="button" onclick="myFunction1()">reverse number</button>
-<p id="demo"></p>
-</form>
+    <form action="myform" method="post">
+        <h1>Prime numbers</h1>
+        <input type="text" id="starting" required autocomplete="off" placeholder="Enter starting number ">
+        <br>
+        <br>
+        <input type="text" id="ending" required autocomplete="off" placeholder="Enter ending number">
+        <br>
+        <br>
+        <button type="button" onclick="printnum()">Print prime numbers</button>
+        <p id="demo"></p>
+      </form> 
 </body>
 </html>
